@@ -1,0 +1,23 @@
+{
+  "heroTitle": "Tata Milesi",
+  "heroSubtitle": "Independent singer-songwriter from Argentina. Presenting his album ‘Desmudanzas’.",
+  "ctaButtons": [
+    {
+      "text": "Latest Release",
+      "link": "#music",
+      "type": "primary"
+    },
+    {
+      "text": "Upcoming Shows",
+      "link": "#tour",
+      "type": "secondary"
+    },
+    {
+      "text": "Watch Video",
+      "link": "https://www.youtube.com/watch?v=Gr2DIDXGaaw",
+      "type": "video"
+    }
+  ],
+  "videoUrl": "https://example.com/promo-video.mp4",
+  "backgroundImage": "/placeholder.svg?height=1080&width=1920"
+}

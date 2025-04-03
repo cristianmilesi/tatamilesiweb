@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "Home",
+    "biography": "Biography",
+    "music": "Music",
+    "tour": "Concerts",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "follow": "Follow me on",
+    "privacy": "Privacy policy"
+  },
+  "languageSelector": {
+    "es": "Spanish",
+    "en": "English",
+    "de": "German"
+  }
+}
