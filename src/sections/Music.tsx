@@ -111,7 +111,7 @@ const Music: React.FC = () => {
                 )}
                 {currentAlbum.youtubeUrl && (
                   <a
-                    href={currentAlbum.youtubeUrlUrl}
+                    href={currentAlbum.youtubeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-red-700 hover:text-bordo transition duration-300"

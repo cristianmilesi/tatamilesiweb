@@ -34,7 +34,7 @@
       "description": "'DesMudanzas' is a conceptual album that delves into transformation and movement as essential parts of personal growth. Each song explores moments of belonging and detachment, along with the emotions they evoke. These stories portray a 'move', whether physical or internal, that was necessary to embrace the journey ahead.",
       "spotifyUrl": "https://open.spotify.com/embed/album/6yQo4v1ebwEagaDOHci2Y8?utm_source=generator&theme=0",
       "appleMusicUrl": "https://music.apple.com/us/album/desmudanzas/1708124131",
-      "youtubeUrl": "https://youtu.be/5QcpY5VnA9g?si=q5yooYpFiVmIKkdc",
+      "youtubeUrl": "https://youtu.be/5QcpY5VnA9g?si=Zpusk_wRcuKn2TFy",
       "tidalUrl": "https://tidal.com/browse/album/317236882",
       "bandcampUrl": "https://tatamilesi.bandcamp.com/album/desmudanzas",
       "label": "Tata Milesi",
@@ -138,16 +138,18 @@
     {
       "id": 2,
       "title": "EP 'Quincenario I'",
-      "year": "2022",
+      "year": "2021",
       "cover": "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1743612867/TataMilesi/images/Portada_Spotify_bupwvj.jpg",
       "description": "Quincenario I is the result of the Quincenario cycle, where I set myself the challenge of composing, producing and publishing a new song every 15 days, in which the public was able to participate in the creation of each song through social networks, answering questions and questionnaires related to each song.",
       "spotifyUrl": "https://open.spotify.com/intl-es/album/7M6Hqc8nYrPLRM17zthxve?si=zNyGsKMOS-KvVxZxS5wIMw",
       "appleMusicUrl": "https://music.apple.com/us/album/quincenario-i-ep/1567606328",
-      "youtubeUrl": "https://youtu.be/5QcpY5VnA9g?si=q5yooYpFiVmIKkdc",
+      "youtubeUrl": "https://youtube.com/playlist?list=PLAjx09y7_W94qDi_BJftnZrBmgXdniX7I&si=BJpTrOH76TkLEezs",
+      "tidalUrl": "https://tidal.com/browse/album/184256118",
+      "bandcampUrl": "https://tatamilesi.bandcamp.com/album/quincenario-i",
       "label": "Tata Milesi",
       "producer": "Tata Milesi",
       "recordingStudio": "Homestudio Tatestudio - Rosario, Argentina",
-      "releaseDate": "202-05-12",
+      "releaseDate": "2021-05-12",
       "musicians": [
         {
           "role": "Vocals, Clasical gitar, electric gitar, choirs, programming",
@@ -161,7 +163,7 @@
           "id": 201,
           "title": "Presentación y Ruego",
           "duration": "3:46",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/presentacion-y-ruego.txt",
             "en": "/lyrics/quincenario/en/presentacion-y-ruego-en.txt"
           }
@@ -170,7 +172,7 @@
           "id": 202,
           "title": "Despistatiempo",
           "duration": "4:56",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/despistatiempo.txt",
             "en": "/lyrics/quincenario/en/despistatiempo-en.txt"
           }
@@ -179,7 +181,7 @@
           "id": 203,
           "title": "Heroica Ternura",
           "duration": "3:38",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/heroica-ternura.txt",
             "en": "/lyrics/quincenario/en/heroica-ternura-en.txt"
           }
@@ -188,7 +190,7 @@
           "id": 204,
           "title": "De Encuentros",
           "duration": "4:16",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/de-encuentros.txt",
             "en": "/lyrics/quincenario/en/de-encuentros-en.txt"
           }
@@ -197,7 +199,7 @@
           "id": 205,
           "title": "A Ustedes va mi canción",
           "duration": "4:08",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/a-ustedes-va-mi-cancion.txt",
             "en": "/lyrics/quincenario/en/a-ustedes-va-mi-cancion-en.txt"
           }
@@ -206,7 +208,7 @@
           "id": 206,
           "title": "Recuerdos",
           "duration": "5:04",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/quincenario/es/recuerdos.txt",
             "en": "/lyrics/quincenario/en/recuerdos-en.txt"
           }
@@ -242,7 +244,7 @@
           "id": 301,
           "title": "Soltar",
           "duration": "3:47",
-          "lyrics": {
+          "lyricsPath": {
             "es": "/lyrics/soltar/es/soltar.txt",
             "en": "/lyrics/soltar/en/soltar-en.txt"
           }

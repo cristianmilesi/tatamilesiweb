@@ -84,6 +84,7 @@ const Tour: React.FC = () => {
                   ) : (
                     <a
                       href={tourDate.ticketUrl}
+                      target="_blank"
                       className="inline-flex items-center bg-verdeclaro hover:bg-verde text-gray-800 hover:text-gray-200 px-6 py-2 rounded-full text-sm font-medium transition duration-300"
                     >
                       <FaTicketAlt className="mr-2" />

@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
       <div className="w-full bg-verdeoscuro py-12  px-4 md:h-screen md:absolute md:inset-0 md:bg-transparent md:z-10 md:flex md:items-center">
         <div className="max-w-xl mx-auto md:mx-0 md:ml-12 lg:ml-24 text-white text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-6 bg-transparent  p-4 inline-block">
+          <h1 className="text-4xl md:text-6xl font-semibold mb-6 bg-transparent  p-4 inline-block">
             {home.heroTitle}
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8  md:p-4">
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                   <a
                     key={index}
                     href={button.link}
-                    className="bg-white text-black px-6 py-3 rounded-full font-bold flex items-center hover:bg-gray-200 transition duration-300"
+                    className="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center hover:bg-gray-200 transition duration-300"
                   >
                     {button.text}
                     <span className="ml-2">→</span>
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
                   <a
                     key={index}
                     href={button.link}
-                    className="border-2 border-white text-white px-6 py-3 rounded-full font-bold flex items-center hover:bg-white hover:bg-opacity-10 transition duration-300"
+                    className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-white hover:bg-opacity-10 transition duration-300 hover:text-gray-800"
                   >
                     {button.text}
                   </a>
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                     href={button.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-bordo text-white px-6 py-3 rounded-full font-bold flex items-center hover:bg-red-700 transition duration-300"
+                    className="bg-verdeoscuro text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-gray-800 transition duration-300"
                   >
                     <span className="mr-2">▶</span>
                     {button.text}
