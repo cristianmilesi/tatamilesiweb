@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal } from "../common/Modal";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 interface Musician {
@@ -42,7 +41,7 @@ const TechnicalSheetModal: React.FC<TechnicalSheetModalProps> = ({
   album,
   labels,
 }) => {
-  const { t, i18n } = useTranslation("music");
+  const { t } = useTranslation("music");
   return (
     <Modal
       isOpen={isOpen}

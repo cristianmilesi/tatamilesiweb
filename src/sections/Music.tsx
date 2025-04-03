@@ -9,11 +9,11 @@ import { MdLyrics } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 
 const Music: React.FC = () => {
-  const { t, i18n } = useTranslation("music");
+  const { t } = useTranslation("music");
   const [activeAlbum, setActiveAlbum] = useState<number>(1);
   const [isTechnicalSheetOpen, setIsTechnicalSheetOpen] = useState(false);
   const [isLyricsOpen, setIsLyricsOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("es");
+  // const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("es");
   const albums = t("albums", { returnObjects: true }) as any[];
 
   const technicalSheetLabels = {

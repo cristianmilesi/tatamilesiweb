@@ -9,19 +9,8 @@ import {
 import { tourDates } from "../assets/data/tour-dates"; //
 import { useTranslation } from "react-i18next";
 
-// interface TourDate {
-//   id: number;
-//   date: string;
-//   venue: string;
-//   city: string;
-//   country: string;
-//   time: string;
-//   ticketUrl: string;
-//   soldOut: boolean;
-// }
-
 const Tour: React.FC = () => {
-  const [filter, setFilter] = useState<string>("all");
+  const [filter] = useState<string>("all");
   const { t, i18n } = useTranslation("tour");
 
   const filteredDates =

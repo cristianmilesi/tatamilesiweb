@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaArrowUp } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const Header: React.FC = () => {

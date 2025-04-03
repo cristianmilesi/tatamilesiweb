@@ -11,11 +11,11 @@ import Home from "./sections/Home";
 import Biography from "./sections/Biography";
 import Music from "./sections/Music";
 import Tour from "./sections/Tour";
-import Gallery from "./sections/Gallery";
 import Contact from "./sections/Contact";
+// import Gallery from "./sections/Gallery";
 
 // Nota: Presskit seguirá siendo una página separada
-import Presskit from "./pages/Presskit";
+// import Presskit from "./pages/Presskit";
 
 // Eventos de ejemplo
 const upcomingEvents = [

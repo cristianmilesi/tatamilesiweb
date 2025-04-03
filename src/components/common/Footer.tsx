@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { getRoute } from "../../routes";
 import { FaInstagram, FaYoutube, FaSpotify } from "react-icons/fa";
 
 // Función para scroll suave hacia secciones

@@ -1,5 +1,5 @@
 import type React from "react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import home from "../i18n/locales/en/home.json";
 // Eliminado el import no utilizado de framer-motion
 
