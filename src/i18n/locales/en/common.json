@@ -1,4 +1,5 @@
 {
+  "siteName": "Tata Milesi",
   "header": {
     "home": "Home",
     "biography": "Biography",
@@ -16,5 +17,13 @@
     "es": "Spanish",
     "en": "English",
     "de": "German"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a question or want to work together? Drop me a message and I'll get back to you.",
+    "information": "Contact",
+    "email": "E-Mail",
+    "location": "Location",
+    "folow-me": "Folow Me"
   }
 }

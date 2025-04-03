@@ -7,7 +7,7 @@ const Biography: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{biography.pageTitle}</h2>
-          <div className="w-20 h-1 bg-indigo-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-verde mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

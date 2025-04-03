@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import type React from "react";
 import { useState } from "react";
 import { AiFillInstagram } from "react-icons/ai";
@@ -67,25 +68,26 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-4xl font-bold mb-4">{t("contact.title")}</h2>
           <div className="w-20 h-1 bg-verde mx-auto"></div>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Have a question or want to work together? Drop me a message and I'll
-            get back to you.
+            {t("contact.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-gray-100 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold mb-6">
+              {t("contact.information")}{" "}
+            </h3>
             <div className="space-y-6 mb-8">
               <div className="flex items-start">
                 <FaEnvelope className="text-verde mr-4 mt-1" />
                 <div>
-                  <h4 className="font-semibold">Email</h4>
+                  <h4 className="font-semibold">{t("contact.email")}</h4>
                   <a
                     href="mailto:tatamilesimusica@gmail.com"
                     className="text-gray-600 hover:text-indigo-600 transition duration-300"
@@ -98,7 +100,7 @@ const Contact: React.FC = () => {
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-verde mr-4 mt-1" />
                 <div>
-                  <h4 className="font-semibold">Location</h4>
+                  <h4 className="font-semibold">{t("contact.location")} </h4>
                   <p className="text-gray-600">Ingolstadt, Deutschland</p>
                 </div>
               </div>
@@ -113,15 +115,17 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-bold mb-6">Follow Me</h3>
+          <div className="p-6">
+            <h3 className="text-2xl font-bold mb-6">
+              {t("contact.folow-me")}{" "}
+            </h3>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
                 <a
                   href="https://instagram.com/tatamilesi/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition duration-300 flex items-center"
+                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-verdeclaro hover:text-white transition duration-300 flex items-center"
                 >
                   <AiFillInstagram className="text-verdeoscuro size-6" />
                 </a>
@@ -133,7 +137,7 @@ const Contact: React.FC = () => {
                   href="https://www.facebook.com/tatamilesimusica"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition duration-300 flex items-center"
+                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-verdeclaro hover:text-white transition duration-300 flex items-center"
                 >
                   <FaFacebookSquare className="text-verdeoscuro size-6" />
                 </a>
@@ -145,7 +149,7 @@ const Contact: React.FC = () => {
                   href="https://www.youtube.com/@tatamilesi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition duration-300 flex items-center"
+                  className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-verdeclaro hover:text-white transition duration-300 flex items-center"
                 >
                   <FaYoutube className="text-verdeoscuro size-6" />
                 </a>

@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import { useRef, useState } from "react";
 import home from "../i18n/locales/en/home.json";
@@ -7,7 +5,6 @@ import home from "../i18n/locales/en/home.json";
 
 const Home: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   // URL de Cloudinary - reemplaza con tu propia URL
   const cloudinaryVideoUrl = {
@@ -15,23 +12,36 @@ const Home: React.FC = () => {
     webm: "https://res.cloudinary.com/dx4kaqyx0/video/upload/f_auto:video,q_auto/v1/TataMilesi/videos/TataWebVideo2",
   };
 
-  const handleVideoModal = () => {
-    // Logic to open video modal would go here
-    console.log("Open video modal");
-  };
-
   return (
-    <div className="min-h-screen flex flex-col md:flex-row font">
-      {/* Contenido de texto */}
-      <div
-        className="md:w-1/2 md:absolute md:left-0 md:top-0 md:bottom-0 md:z-10 
-                      flex items-center justify-center p-4 bg-black/60 md:bg-transparent"
-      >
-        <div className="max-w-xl text-white text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-6 bg-transparent p-4 inline-block">
+    <div
+      id="home"
+      className=" min-h-screen flex flex-col overflow-hidden bg-verdeoscuro"
+    >
+      <div className="w-full h-[50vh] md:h-screen md:absolute md:inset-0 md:z-0 m-0 p-0">
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-[50vh] md:h-full object-cover"
+        >
+          <source src={cloudinaryVideoUrl.mp4} type="video/mp4" />
+          <source src={cloudinaryVideoUrl.webm} type="video/webm" />
+          <img
+            src="https://res.cloudinary.com/dx4kaqyx0/image/upload/f_auto,q_auto/v1/TataMilesi/photos/rniznsdzkhsihn5ls2q8.jpg"
+            alt="Background fallback"
+            className="absolute top-0 left-0 w-full h-full object-cover"
+          />
+        </video>
+      </div>
+
+      <div className="w-full bg-verdeoscuro py-12  px-4 md:h-screen md:absolute md:inset-0 md:bg-transparent md:z-10 md:flex md:items-center">
+        <div className="max-w-xl mx-auto md:mx-0 md:ml-12 lg:ml-24 text-white text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-semibold mb-6 bg-transparent  p-4 inline-block">
             {home.heroTitle}
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8">
+          <p className="text-xl md:text-2xl text-gray-200 mb-8  md:p-4">
             {home.heroSubtitle}
           </p>
 
@@ -81,26 +91,6 @@ const Home: React.FC = () => {
             })}
           </div>
         </div>
-      </div>
-
-      {/* Video Background - Movido fuera del div de contenido */}
-      <div className="relative w-full md:absolute md:inset-0">
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full md:h-full object-cover"
-        >
-          <source src={cloudinaryVideoUrl.mp4} type="video/mp4" />
-          <source src={cloudinaryVideoUrl.webm} type="video/webm" />
-          <img
-            src="https://res.cloudinary.com/dx4kaqyx0/image/upload/f_auto,q_auto/v1/TataMilesi/photos/rniznsdzkhsihn5ls2q8.jpg"
-            alt="Background fallback"
-            className="w-full h-full object-cover"
-          />
-        </video>
       </div>
     </div>
   );

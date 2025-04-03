@@ -106,15 +106,12 @@ const Tour: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-300 mb-6">
-            Want to bring the show to your city? Get in touch with booking
-            information.
-          </p>
+          <p className="text-gray-200 mb-6">{t("contactForBookingMessage")}</p>
           <a
             href="#contact"
-            className="inline-flex items-center border-2 border-gray-300 text-gray-300 px-6 py-3 rounded-full font-medium hover:bg-verde hover:text-white transition duration-300"
+            className="inline-flex items-center border-2 border-gray-200 text-gray-300 px-6 py-3 rounded-full font-medium hover:bg-verde hover:text-white transition duration-300"
           >
-            Contact for Booking
+            {t("contactForBookingButton")}
           </a>
         </div>
       </div>
