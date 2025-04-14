@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import type React from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import {

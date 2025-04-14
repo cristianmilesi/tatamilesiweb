@@ -1,8 +1,6 @@
 import type React from "react";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import home from "../i18n/locales/en/home.json";
-// Eliminado el import no utilizado de framer-motion
 
 const Home: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);

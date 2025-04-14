@@ -1,6 +1,5 @@
 import type React from "react";
 import { useTranslation } from "react-i18next";
-import biography from "../i18n/locales/en/biography.json";
 
 const Biography: React.FC = () => {
   const { t } = useTranslation("biography");
