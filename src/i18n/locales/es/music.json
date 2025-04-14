@@ -1,0 +1,254 @@
+{
+  "pageTitle": "Musica",
+  "pageDescription": "Explora un poco de mi música y escucha mis canciones",
+  "viewAllReleasesButton": "Al Inicio",
+  "listenOnSpotify": "Escuchar en Spotify",
+  "watchOnYouTube": "Ver en YouTube",
+  "technicalSheetButton": "Ficha Técnica",
+  "lyricsButton": "Letras",
+  "NoMusic": "No hay reproductor disponible actualmente.",
+  "generalInfo": "Información General",
+  "musicians": "Músicos/as",
+  "additionalCredits": "Créditos adicionales",
+  "languageSelector": {
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "technicalSheetLabels": {
+    "title": "Título",
+    "releaseYear": "Año de publicación",
+    "label": "Sello Discográfico",
+    "producer": "Productor",
+    "recordingStudio": "Estudio de grabación",
+    "generalInfo": "Información General",
+    "musicians": "Musicos/as",
+    "additionalCredits": "Créditos adicionales"
+  },
+
+  "albums": [
+    {
+      "id": 1,
+      "title": "Desmudanzas",
+      "year": "2023",
+      "cover": "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1743612833/TataMilesi/images/Desmudanzas_para_Spotify_jhqwt8.jpg",
+      "description": "'DesMudanzas' es un álbum conceptual que trata sobre la transformación y el movimiento como parte necesaria de la evolución de las personas. Cada canción, explora instancias de los procesos de arraigo, desarraigo, las emociones que estos generan y reflejan una “mudanza” real o interna, que fue necesaria transitar para abrazar el camino.",
+      "spotifyUrl": "https://open.spotify.com/embed/album/6yQo4v1ebwEagaDOHci2Y8?utm_source=generator&theme=0",
+      "appleMusicUrl": "https://music.apple.com/us/album/desmudanzas/1708124131",
+      "youtubeUrl": "https://youtu.be/5QcpY5VnA9g?si=Zpusk_wRcuKn2TFy",
+      "tidalUrl": "https://tidal.com/browse/album/317236882",
+      "bandcampUrl": "https://tatamilesi.bandcamp.com/album/desmudanzas",
+      "label": "Tata Milesi",
+      "producer": "Ariel Migliorelli y Tata Milesi",
+      "recordingStudio": "Grabado en Estudio Corcovado (Rosario, Santa Fe) por Ariel Migliorelli. Algunas grabaciones auxiliares fueron realizadas en Tatestudio. Los coros en 'Tengo que moverme' fueron grabados en 'El Galpón Sala' Paraná, Entre Ríos.",
+      "releaseDate": "2023-10-07",
+      "musicians": [
+        {
+          "role": "Voz, guitarra clásica, guitarra eléctrica, programación de percusiones, vientos y cuerdas, sintetizador, coros.",
+          "name": "Tata Milesi"
+        },
+        {
+          "role": "Bajo, sintetizador, programaciones, percusión",
+          "name": "Ariel Migliorelli"
+        },
+        { "role": "Batería y percusión", "name": "Juan Ormaechea" },
+        {
+          "role": "Coros en 'La Partida' y 'Cuando me pierda'",
+          "name": "Tatiana Jodor"
+        },
+        { "role": "Coros en 'La Partida'", "name": "Daiana Leonelli" },
+        { "role": "Violoncello en 'Te vas'", "name": "Nadia Castro" },
+        { "role": "Coros en 'Te Vas'", "name": "Americo Salomone" },
+        { "role": "Coros en 'Te Vas'", "name": "Luciano Alegre" },
+        {
+          "role": "Coro de Murga en 'Tengo que moverme': Sergio Danilo Alegre, Juan Simón Rossi, Luis Ferrari, Maximiliano Ferrari, Luciano Alegre, Americo Salomone, Ruben Paez, Gervasio Fiorotto, Virginia Figueroa, Tatiana Jodor",
+          "name": "Miembros de murga La Malparida:"
+        },
+        { "role": "Bajo en 'Soy'", "name": "Luciano Barreira" },
+        { "role": "Guitarras en 'Cuando me pierda'", "name": "Marcelo Stenta" }
+      ],
+      "additionalCredits": "Todas las canciones compuestas por Cristian Adrian Milesi \nProducción musical y arreglos: Ariel Migliorelli y Tata Milesi \nMezcla: Ariel Migliorelli en Corcovado Estudio\n Masterización: Dani Perez en Audioburó Estudio \n\nArte de Tapa e Ilustración: Tatiana Catelani\nDiseño de contratapa: Tatiana Catelani \n\nProducción artística y ejecutiva: Cristian Milesi y Tatiana Jodor \nProducción Fonográfica: Cristian Milesi",
+
+      "tracks": [
+        {
+          "id": 101,
+          "title": "La Partida",
+          "duration": "3:06",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/la-partida.txt",
+            "en": "/lyrics/desmudanzas/en/la-partida-en.txt"
+          }
+        },
+        {
+          "id": 102,
+          "title": "Te vas",
+          "duration": "2:44",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/te-vas.txt",
+            "en": "/lyrics/desmudanzas/en/te-vas-en.txt"
+          }
+        },
+        {
+          "id": 103,
+          "title": "Tengo que moverme",
+          "duration": "3:10",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/tengo-que-moverme.txt",
+            "en": "/lyrics/desmudanzas/en/tengo-que-moverme-en.txt"
+          }
+        },
+        {
+          "id": 104,
+          "title": "Hasta acá",
+          "duration": "4:43",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/hasta-aca.txt",
+            "en": "/lyrics/desmudanzas/en/hasta-aca-en.txt"
+          }
+        },
+        {
+          "id": 105,
+          "title": "Dudas",
+          "duration": "3:46",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/dudas.txt",
+            "en": "/lyrics/desmudanzas/en/dudas-en.txt"
+          }
+        },
+        {
+          "id": 106,
+          "title": "Soy",
+          "duration": "4:01",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/soy.txt",
+            "en": "/lyrics/desmudanzas/en/soy-en.txt"
+          }
+        },
+        {
+          "id": 107,
+          "title": "Cuando me pierda",
+          "duration": "4:31",
+          "lyricsPath": {
+            "es": "/lyrics/desmudanzas/es/cuando-me-pierda.txt",
+            "en": "/lyrics/desmudanzas/en/cuando-me-pierda-en.txt"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "EP 'Quincenario I'",
+      "year": "2021",
+      "cover": "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1743612867/TataMilesi/images/Portada_Spotify_bupwvj.jpg",
+      "description": "Quincenario I es el resultado del ciclo Quincenario, donde me propuse el desafío de componer, producir y publicar una canción nueva cada 15 días.  En este proceso el público pudo participar en la creación de cada tema a traves de las redes sociales, respondiendo preguntas y cuestionarios relacionados con cada canción.",
+      "spotifyUrl": "https://open.spotify.com/intl-es/album/7M6Hqc8nYrPLRM17zthxve?si=zNyGsKMOS-KvVxZxS5wIMw",
+      "appleMusicUrl": "https://music.apple.com/us/album/quincenario-i-ep/1567606328",
+      "youtubeUrl": "https://youtube.com/playlist?list=PLAjx09y7_W94qDi_BJftnZrBmgXdniX7I&si=BJpTrOH76TkLEezs",
+      "tidalUrl": "https://tidal.com/browse/album/184256118",
+      "bandcampUrl": "https://tatamilesi.bandcamp.com/album/quincenario-i",
+      "label": "Tata Milesi",
+      "producer": "Tata Milesi",
+      "recordingStudio": "Homestudio Tatestudio - Rosario, Argentina",
+      "releaseDate": "2021-05-12",
+      "musicians": [
+        {
+          "role": "Voces, Guitarra clásica y eléctrica, coros, programación.",
+          "name": "Tata Milesi"
+        }
+      ],
+      "additionalCredits": "Todas las canciones compuestas por Cristian Adrian Milesi \nProducción, arreglos, grabación, edición, mezcla y mastering: Cristian Adrian Milesi \n\nGrabado entre Diciembre y Marzo del 2021 en mi home studio, Rosario (Argentina)\n\n Arte de tapa, diseño visual e ilustraciones: Martín Aquilini \nPrensa y comunicación: Ignacio Fierro \nProducción artística: Cristian Adrian Milesi \nProducción General: Tatiana Jodor - Cristian Adrian Milesi \nProductor Fonográfico: Cristian Adrian Milesi",
+
+      "tracks": [
+        {
+          "id": 201,
+          "title": "Presentación y Ruego",
+          "duration": "3:46",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/presentacion-y-ruego.txt",
+            "en": "/lyrics/quincenario/en/presentacion-y-ruego-en.txt"
+          }
+        },
+        {
+          "id": 202,
+          "title": "Despistatiempo",
+          "duration": "4:56",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/despistatiempo.txt",
+            "en": "/lyrics/quincenario/en/despistatiempo-en.txt"
+          }
+        },
+        {
+          "id": 203,
+          "title": "Heroica Ternura",
+          "duration": "3:38",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/heroica-ternura.txt",
+            "en": "/lyrics/quincenario/en/heroica-ternura-en.txt"
+          }
+        },
+        {
+          "id": 204,
+          "title": "De Encuentros",
+          "duration": "4:16",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/de-encuentros.txt",
+            "en": "/lyrics/quincenario/en/de-encuentros-en.txt"
+          }
+        },
+        {
+          "id": 205,
+          "title": "A Ustedes va mi canción",
+          "duration": "4:08",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/a-ustedes-va-mi-cancion.txt",
+            "en": "/lyrics/quincenario/en/a-ustedes-va-mi-cancion-en.txt"
+          }
+        },
+        {
+          "id": 206,
+          "title": "Recuerdos",
+          "duration": "5:04",
+          "lyricsPath": {
+            "es": "/lyrics/quincenario/es/recuerdos.txt",
+            "en": "/lyrics/quincenario/en/recuerdos-en.txt"
+          }
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "Soltar",
+      "year": "2019",
+      "cover": "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1743628703/TataMilesi/images/para_video_cuadrado_2-05_i6sqim.jpg",
+      "description": "Single. Publicado en YouTube. Grabado en Paraná, Entre Ríos, Argentina.",
+      "youtubeUrl": "https://www.youtube.com/watch?v=MTBDLgqFY7Y",
+      "label": "Tata Milesi",
+      "producer": "Tata Milesi",
+      "recordingStudio": "Homestudio - Paraná, Argentina",
+      "releaseDate": "202-05-12",
+      "musicians": [
+        {
+          "role": "Voces, Guitarra clásica",
+          "name": "Tata Milesi"
+        },
+        {
+          "role": "Bajo",
+          "name": "Luciano Barreira"
+        },
+        { "role": "Batería y percusión", "name": "Facu Aquilini" }
+      ],
+      "additionalCredits": "Letra y Música: Cristian Adrian Milesi  \n\nGrabado en la casa de Facu, en Paraná, con mucho amor y pocos recursos, en Septiembre de 2019 \n\nMezcla final: Juan Salomone \n\nDiseño gráfico: Martin Aquilini \nIlustraciones: Cristian 'Tata' Milesi",
+      "tracks": [
+        {
+          "id": 301,
+          "title": "Soltar",
+          "duration": "3:47",
+          "lyricsPath": {
+            "es": "/lyrics/soltar/es/soltar.txt",
+            "en": "/lyrics/soltar/en/soltar-en.txt"
+          }
+        }
+      ]
+    }
+  ]
+}

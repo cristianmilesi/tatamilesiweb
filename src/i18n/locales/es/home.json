@@ -1,0 +1,23 @@
+{
+  "heroTitle": "Tata Milesi",
+  "heroSubtitle": "Cantautor argentino intependiente. Presentando su album ‘Desmudanzas’",
+  "ctaButtons": [
+    {
+      "text": "Ultimos lanzamientos",
+      "link": "#music",
+      "type": "primary"
+    },
+    {
+      "text": "Próximos shows",
+      "link": "#tour",
+      "type": "secondary"
+    },
+    {
+      "text": "Ver video",
+      "link": "https://www.youtube.com/watch?v=Gr2DIDXGaaw",
+      "type": "video"
+    }
+  ],
+  "videoUrl": "https://example.com/promo-video.mp4",
+  "backgroundImage": "/placeholder.svg?height=1080&width=1920"
+}

@@ -1,16 +1,24 @@
 import type React from "react";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import home from "../i18n/locales/en/home.json";
 // Eliminado el import no utilizado de framer-motion
 
 const Home: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const { t } = useTranslation("home");
 
   // URL de Cloudinary - reemplaza con tu propia URL
   const cloudinaryVideoUrl = {
     mp4: "https://res.cloudinary.com/dx4kaqyx0/video/upload/f_auto:video,q_auto/v1/TataMilesi/videos/TataWebVideo1.mp4",
     webm: "https://res.cloudinary.com/dx4kaqyx0/video/upload/f_auto:video,q_auto/v1/TataMilesi/videos/TataWebVideo2",
   };
+
+  const ctaButtons = t("ctaButtons", { returnObjects: true }) as Array<{
+    text: string;
+    link: string;
+    type: string;
+  }>;
 
   return (
     <div
@@ -39,14 +47,14 @@ const Home: React.FC = () => {
       <div className="w-full bg-verdeoscuro py-12  px-4 md:h-screen md:absolute md:inset-0 md:bg-transparent md:z-10 md:flex md:items-center">
         <div className="max-w-xl mx-auto md:mx-0 md:ml-12 lg:ml-24 text-white text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-semibold mb-6 bg-transparent  p-4 inline-block">
-            {home.heroTitle}
+            {t("heroTitle")}
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8  md:p-4">
-            {home.heroSubtitle}
+            {t("heroSubtitle")}
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            {home.ctaButtons.map((button, index) => {
+            {ctaButtons.map((button, index) => {
               // Botón primario (Latest Release)
               if (button.type === "primary") {
                 return (

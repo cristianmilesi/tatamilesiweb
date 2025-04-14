@@ -7,8 +7,10 @@ import {
   FaMapMarkerAlt,
   FaYoutube,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation("common");
   return (
     <div id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">

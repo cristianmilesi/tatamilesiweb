@@ -1,0 +1,17 @@
+{
+  "pageTitle": "Recitales",
+  "pageDescription": "Escuchame en vivo. Estos son mis próximos shows.",
+  "noShowsMessage": "Recitales no disponibles por el momento.",
+  "checkBackSoonMessage": "Contacto",
+  "soldOutLabel": "Sold Out",
+  "getTicketsLabel": "+ Info",
+  "dateFormat": {
+    "month": "short",
+    "day": "numeric",
+    "year": "numeric"
+  },
+  "venueLabel": "Lugar",
+  "cityLabel": "Ciudad",
+  "countryLabel": "País",
+  "timeLabel": "Hora"
+}

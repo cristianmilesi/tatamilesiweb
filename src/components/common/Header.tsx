@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const Header: React.FC = () => {
   const { t } = useTranslation("common");
@@ -86,81 +87,89 @@ const Header: React.FC = () => {
             {t("siteName")}
           </Link>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden text-white focus:outline-none"
-            onClick={toggleMenu}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+          {/* Selector de idioma - visible en móvil y desktop */}
+          <div className="hidden md:flex items-center"></div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
-            <a
-              href="#home"
-              className="text-white hover:text-gray-300 transition duration-300"
-            >
-              {t("header.home")}
-            </a>
-            <a
-              href="#biography"
-              className="text-white hover:text-gray-300 transition duration-300"
-            >
-              {t("header.biography")}
-            </a>
-            <a
-              href="#music"
-              className="text-white hover:text-gray-300 transition duration-300"
-            >
-              {t("header.music")}
-            </a>
-            <a
-              href="#tour"
-              className="text-white hover:text-gray-300 transition duration-300"
-            >
-              {t("header.tour")}
-            </a>
-            {/* <a
+          <div className="hidden md:flex items-center">
+            <nav className="hidden md:flex space-x-6">
+              <a
+                href="#home"
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                {t("header.home")}
+              </a>
+              <a
+                href="#biography"
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                {t("header.biography")}
+              </a>
+              <a
+                href="#music"
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                {t("header.music")}
+              </a>
+              <a
+                href="#tour"
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                {t("header.tour")}
+              </a>
+              {/* <a
               href="#gallery"
               className="text-white hover:text-gray-300 transition duration-300"
             >
               {t("header.gallery")}
             </a> */}
-            <a
-              href="#contact"
-              className="text-white hover:text-gray-300 transition duration-300"
-            >
-              {t("header.contact")}
-            </a>
-            {/* <Link
+              <a
+                href="#contact"
+                className="text-white hover:text-gray-300 transition duration-300"
+              >
+                {t("header.contact")}
+              </a>
+              {/* <Link
               to="/presskit"
               className="text-white hover:text-gray-300 transition duration-300"
             >
               {t("header.presskit")}
             </Link> */}
-          </nav>
+              <LanguageSelector />
+            </nav>
+          </div>
+          <div className="flex items-center md:hidden">
+            <LanguageSelector />
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden text-white focus:outline-none"
+              onClick={toggleMenu}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

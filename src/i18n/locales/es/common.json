@@ -1,20 +1,29 @@
 {
+  "siteName": "Tata Milesi",
   "header": {
     "home": "Inicio",
     "biography": "Biografía",
     "music": "Música",
-    "tour": "Gira",
-    "gallery": "Galería",
+    "tour": "Recitales",
+    "gallery": "Gallería",
     "contact": "Contacto"
   },
   "footer": {
-    "rights": "Todos los derechos reservados",
-    "follow": "Sígueme en",
-    "privacy": "Política de privacidad"
+    "rights": "All rights reserved",
+    "follow": "Seguime en",
+    "privacy": "Privacy policy"
   },
   "languageSelector": {
     "es": "Español",
     "en": "Inglés",
     "de": "Alemán"
+  },
+  "contact": {
+    "title": "Contactate conmigo",
+    "subtitle": "¿Tenés una pregunta o querés que trabajemos juntos? Dejame un mensaje y me pondré en contacto.",
+    "information": "Contacto",
+    "email": "E-Mail",
+    "location": "Lugar",
+    "folow-me": "Seguime"
   }
 }

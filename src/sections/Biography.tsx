@@ -1,30 +1,32 @@
 import type React from "react";
+import { useTranslation } from "react-i18next";
 import biography from "../i18n/locales/en/biography.json";
 
 const Biography: React.FC = () => {
+  const { t } = useTranslation("biography");
   return (
     <div className="py-20 bg-gray-100/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{biography.pageTitle}</h2>
+          <h2 className="text-4xl font-bold mb-4">{t("pageTitle")}</h2>
           <div className="w-20 h-1 bg-verde mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-bold mb-4">{biography.storyTitle}</h3>
+            <h3 className="text-2xl font-bold mb-4">{t("storyTitle")}</h3>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              {biography.storyParagraphs[0]}
+              {t("storyParagraphs.0")}
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              {biography.storyParagraphs[1]}
+              {t("storyParagraphs.1")}
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              {biography.storyParagraphs[2]}
+              {t("storyParagraphs.2")}
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              {biography.storyParagraphs[3]}
+              {t("storyParagraphs.3")}
             </p>
           </div>
 
