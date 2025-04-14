@@ -3,6 +3,8 @@
   "pageDescription": "Escuchame en vivo. Estos son mis próximos shows.",
   "noShowsMessage": "Recitales no disponibles por el momento.",
   "checkBackSoonMessage": "Contacto",
+  "contactForBookingMessage": "¿Querés que toque en tu ciudad? Contactame para más información.",
+  "contactForBookingButton": "Contacto",
   "soldOutLabel": "Sold Out",
   "getTicketsLabel": "+ Info",
   "dateFormat": {
