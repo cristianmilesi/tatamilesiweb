@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Biography: React.FC = () => {
   const { t } = useTranslation("biography");
   return (
-    <div className="py-20 bg-gray-100/40">
+    <div className="py-20 bg-gray-100/40 aparicion">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t("pageTitle")}</h2>
@@ -15,16 +15,16 @@ const Biography: React.FC = () => {
           <div className="order-2 md:order-1">
             <h3 className="text-2xl font-bold mb-4">{t("storyTitle")}</h3>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed  text-pretty">
               {t("storyParagraphs.0")}
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed text-pretty">
               {t("storyParagraphs.1")}
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed text-pretty">
               {t("storyParagraphs.2")}
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed text-pretty">
               {t("storyParagraphs.3")}
             </p>
           </div>
