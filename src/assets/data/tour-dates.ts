@@ -13,12 +13,12 @@ export interface TourDate {
 export const tourDates: TourDate[] = [
   {
     id: 1,
-    date: "2025-04-08", // Formato ISO para facilitar la internacionalización
-    venue: "Neue Welt",
-    city: "Ingolstadt",
+    date: "2025-05-15", // Formato ISO para facilitar la internacionalización
+    venue: "Apero Bar",
+    city: "Nürnberg",
     country: "Deutschland",
-    time: "20:00",
-    ticketUrl: "https://www.instagram.com/p/DHWKjxHAb70/?hl=es",
+    time: "19:30",
+    ticketUrl: "https://www.instagram.com/bar_apero_nuernberg/",
     soldOut: false,
   },
   {

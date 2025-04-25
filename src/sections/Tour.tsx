@@ -43,7 +43,7 @@ const Tour: React.FC = () => {
             filteredDates.map((tourDate) => (
               <div
                 key={tourDate.id}
-                className="bg-gray-800/80 rounded-lg p-6 flex flex-col md:flex-row md:items-center justify-between hover:bg-gray-750 transition duration-300"
+                className="bg-gray-800/80 rounded-lg p-6 flex flex-col md:flex-row md:items-center justify-between hover:bg-gray-750 transition duration-400 hover:scale-101 "
               >
                 <div className="flex flex-col md:flex-row md:items-center mb-4 md:mb-0">
                   <div className="flex items-center mb-2 md:mb-0 md:mr-8">
