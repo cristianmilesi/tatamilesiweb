@@ -13,6 +13,7 @@ export interface Album {
   bandcampUrl: string;
   soundcloudUrl: string;
   tidalUrl: string;
+  generalInfo: string;
   label?: string;
   producer?: string;
   recordingStudio?: string;
