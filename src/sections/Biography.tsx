@@ -37,33 +37,12 @@ const Biography: React.FC = () => {
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
                 style={{ maxHeight: "500px" }}
               />
-              {/* <div className="absolute -bottom-6 -left-6 bg-white p-4 shadow-lg rounded">
-                <p className="font-bold text-lg">
-                  "Music is the universal language that connects us all."
-                </p>
-              </div> */}
+              <div className="absolute bottom-3 right-3 bg-black/60 px-3 py-1 rounded-full">
+                <p className="text-white text-xs">Ph: Jessica Cordoba</p>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <h4 className="text-4xl font-bold text-indigo-600 mb-2">3</h4>
-            <p className="text-gray-700 font-medium">Studio Albums</p>
-          </div>
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <h4 className="text-4xl font-bold text-indigo-600 mb-2">12</h4>
-            <p className="text-gray-700 font-medium">Singles Released</p>
-          </div>
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <h4 className="text-4xl font-bold text-indigo-600 mb-2">250+</h4>
-            <p className="text-gray-700 font-medium">Live Performances</p>
-          </div>
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <h4 className="text-4xl font-bold text-indigo-600 mb-2">5M+</h4>
-            <p className="text-gray-700 font-medium">Streams Worldwide</p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

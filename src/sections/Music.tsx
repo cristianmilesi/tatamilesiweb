@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useAlbumManager } from "../hooks/useAlbumManager";
 import {
@@ -17,7 +17,8 @@ const Music: React.FC = () => {
   const { t } = useTranslation("music");
   const [isTechnicalSheetOpen, setIsTechnicalSheetOpen] = useState(false);
   const [isLyricsOpen, setIsLyricsOpen] = useState(false);
-
+  const [playerVisible, setPlayerVisible] = useState(false);
+  const playerContainerRef = useRef<HTMLDivElement>(null);
   const {
     albums,
     currentAlbum,
@@ -40,6 +41,33 @@ const Music: React.FC = () => {
     musicians: t("technicalSheetLabels.musicians"),
     additionalCredits: t("technicalSheetLabels.additionalCredits"),
   };
+
+  // Configurar Intersection Observer para cargar Spotify cuando sea visible
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "100px",
+      threshold: 0.1, // Cargar cuando al menos 10% del elemento sea visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setPlayerVisible(true);
+          // Desconectar el observer después de cargar
+          observer.disconnect();
+        }
+      });
+    }, options);
+
+    if (playerContainerRef.current) {
+      observer.observe(playerContainerRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeAlbum]);
 
   // Función para extraer el ID del video de YouTube de la URL
   function getYoutubeVideoId(url: string): string {
@@ -187,7 +215,10 @@ const Music: React.FC = () => {
 
             <div className="md:col-span-2">
               {/* Reproductor de Spotify o YouTube según disponibilidad */}
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div
+                ref={playerContainerRef}
+                className="bg-gray-50 rounded-lg p-6"
+              >
                 {currentAlbum.spotifyUrl ? (
                   // Reproductor de Spotify
                   <>
@@ -195,17 +226,32 @@ const Music: React.FC = () => {
                       {t("listenOnSpotify")}
                     </h4>
                     <div className="aspect-auto h-[380px]">
-                      <iframe
-                        src={`https://open.spotify.com/embed/album/${getSpotifyAlbumId(
-                          currentAlbum.spotifyUrl
-                        )}`}
-                        width="100%"
-                        height="100%"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                        title={`${currentAlbum.title} on Spotify`}
-                        className="rounded-md"
-                      ></iframe>
+                      {!playerVisible ? (
+                        // Placeholder mientras se carga
+                        <div className="w-full h-full bg-gray-100 rounded-md flex items-center justify-center">
+                          <div className="text-center">
+                            <div className="animate-pulse w-16 h-16 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                              <span className="text-2xl">🎵</span>
+                            </div>
+                            <p className="text-gray-600">
+                              {t("loadingPlayer", "Cargando reproductor...")}
+                            </p>
+                          </div>
+                        </div>
+                      ) : (
+                        // Reproductor de Spotify
+                        <iframe
+                          src={`https://open.spotify.com/embed/album/${getSpotifyAlbumId(
+                            currentAlbum.spotifyUrl
+                          )}`}
+                          width="100%"
+                          height="100%"
+                          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                          loading="lazy"
+                          title={`${currentAlbum.title} on Spotify`}
+                          className="rounded-md"
+                        ></iframe>
+                      )}
                     </div>
                   </>
                 ) : currentAlbum.youtubeUrl ? (
@@ -215,17 +261,34 @@ const Music: React.FC = () => {
                       {t("watchOnYouTube")}
                     </h4>
                     <div className="aspect-video">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${getYoutubeVideoId(
-                          currentAlbum.youtubeUrl
-                        )}`}
-                        title={`${currentAlbum.title} on YouTube`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="rounded-md"
-                      ></iframe>
+                      {!playerVisible ? (
+                        // Placeholder mientras se carga
+                        <div className="w-full h-0 pt-[56.25%] relative bg-gray-100 rounded-md">
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="text-center">
+                              <div className="animate-pulse w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span className="text-2xl">▶️</span>
+                              </div>
+                              <p className="text-gray-600">
+                                {t("loadingVideo", "Cargando video...")}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ) : (
+                        // Reproductor de YouTube
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src={`https://www.youtube.com/embed/${getYoutubeVideoId(
+                            currentAlbum.youtubeUrl
+                          )}`}
+                          title={`${currentAlbum.title} on YouTube`}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="rounded-md"
+                        ></iframe>
+                      )}
                     </div>
                   </>
                 ) : (
