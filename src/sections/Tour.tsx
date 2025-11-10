@@ -84,13 +84,17 @@ const Tour: React.FC = () => {
               </div>
             ))
           ) : (
+            // <div className="text-center py-10 bg-gray-800 rounded-lg">
+            //   <p className="text-xl text-gray-300">
+            //     {t("contactForBookingMessage")}
+            //   </p>
+            //   <p className="text-gray-400 mt-2">
+            //     {t("contactForBookingButton")}
+            //   </p>
+            // </div>
+
             <div className="text-center py-10 bg-gray-800 rounded-lg">
-              <p className="text-xl text-gray-300">
-                {t("contactForBookingMessage")}
-              </p>
-              <p className="text-gray-400 mt-2">
-                {t("contactForBookingButton")}
-              </p>
+              <p className="text-xl text-gray-300">{t("noShowsMessage")}</p>
             </div>
           )}
         </div>
