@@ -11,16 +11,16 @@ export interface TourDate {
 }
 
 export const tourDates: TourDate[] = [
-  // {
-  //   id: 1,
-  //   date: "2025-05-15", // Formato ISO para facilitar la internacionalización
-  //   venue: "Apero Bar",
-  //   city: "Nürnberg",
-  //   country: "Deutschland",
-  //   time: "19:30",
-  //   ticketUrl: "https://www.instagram.com/bar_apero_nuernberg/",
-  //   soldOut: false,
-  // },
+  {
+    id: 1,
+    date: "2026-04-26", // Formato ISO para facilitar la internacionalización
+    venue: "Alte Utting (Lagerhausstraße 15)",
+    city: "München",
+    country: "Deutschland",
+    time: "15:00",
+    ticketUrl: "https://www.instagram.com/alteutting/",
+    soldOut: false,
+  },
   // {
   //   id: 2,
   //   date: "2025-07-03",
