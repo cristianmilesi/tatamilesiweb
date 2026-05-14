@@ -13,8 +13,8 @@ export interface TourDate {
 export const tourDates: TourDate[] = [
   {
     id: 1,
-    date: "2026-06-13", // Formato ISO para facilitar la internacionalización
-    venue: "Poppinski (Küferstraße 40)",
+    date: "2026-06-06", // Formato ISO para facilitar la internacionalización
+    venue: "Erdbeerfest - Poppinski (Küferstraße 40)",
     city: "Stuttgart",
     country: "Deutschland",
     time: "18:00",
@@ -23,7 +23,7 @@ export const tourDates: TourDate[] = [
   },
   {
     id: 2,
-    date: "2026-06-06", // Formato ISO para facilitar la internacionalización
+    date: "2026-06-13", // Formato ISO para facilitar la internacionalización
     venue: "Gans Woanders (Pingersheimer Straße 13)",
     city: "München",
     country: "Deutschland",
