@@ -13,12 +13,12 @@ export interface TourDate {
 export const tourDates: TourDate[] = [
   {
     id: 1,
-    date: "2026-04-26", // Formato ISO para facilitar la internacionalización
-    venue: "Alte Utting (Lagerhausstraße 15)",
+    date: "2026-06-13", // Formato ISO para facilitar la internacionalización
+    venue: "Gans Woanders (Pingersheimer Straße 13)",
     city: "München",
     country: "Deutschland",
     time: "15:00",
-    ticketUrl: "https://www.instagram.com/alteutting/",
+    ticketUrl: "https://www.instagram.com/gans_woanders/",
     soldOut: false,
   },
   // {
