@@ -31,6 +31,16 @@ export const tourDates: TourDate[] = [
     ticketUrl: "https://www.instagram.com/gans_woanders/",
     soldOut: false,
   },
+  {
+    id: 3,
+    date: "2026-07-25", // Formato ISO para facilitar la internacionalización
+    venue: "Fest der Kulturen )",
+    city: "Ingolstadt",
+    country: "Deutschland",
+    time: "15:00",
+    ticketUrl: "Kostenloser Eintritt",
+    soldOut: false,
+  },
   // {
   //   id: 2,
   //   date: "2025-07-03",
